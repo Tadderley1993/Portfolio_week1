@@ -1,0 +1,107 @@
+﻿*{
+    height: max-height;
+    width: max-width;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background:black
+}
+.scroll_area,
+.scroll_container {
+   width: 100%;
+   height: 100vh;
+}
+.scroll_container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    border: none; 
+    color: white;
+}
+.scroll_area {
+    scroll-snap-align: start;
+}
+.scroll_container ::-webkit-scrollbar {
+    display: none;
+}
+.scroll_area {
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll_area div{
+    width: fit-content;
+    height: fit-content;
+}
+
+.scroll_area{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.scroll_area p{
+   text-align: justify;
+   text-align-last: center;
+   line-height: 1.2;
+}
+.p1{
+    padding: 20px;
+}
+.header{
+    font-size: 25px;
+    letter-spacing: 3px;
+
+    text-shadow: 
+    0 0 10px white, 
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white,
+    0 0 120px white;
+    
+}
+.container{
+    width: fit-content;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+.lrg_header{
+    text-align: center;
+    padding-left: 40px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-shadow: 
+    0 0 10px rgba(255, 255, 255, .8), 
+    0 0 30px rgba(255, 255, 255, .6),
+    0 0 40px rgba(255, 255, 255, .4),
+    0 0 80px rgba(255, 255, 255, .2),
+    0 0 120px rgba(255, 255, 255, .1);
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 20px;
+    font-size: 14px;
+    text-align: end;
+}
+.assignment{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+}
+.course{
+    font-size: 14px;
+    text-align: end;
+    font-weight: 800;
+}
