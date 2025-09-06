@@ -27,7 +27,7 @@
     display: none;
 }
 .scroll_area {
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -91,17 +91,17 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding-right: 20px;
-    font-size: 14px;
+    //padding-right: 20px;
+    font-size: 20px;
     text-align: end;
 }
 .assignment{
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     font-weight: 100;
 }
 .course{
-    font-size: 14px;
+    font-size: 18px;
     text-align: end;
     font-weight: 800;
 }
